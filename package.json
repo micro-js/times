@@ -1,0 +1,15 @@
+{
+  "name": "@f/times",
+  "description": "Run a function n times and aggregate the results into an array",
+  "repository": "git://github.com/micro-js/times.git",
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "scripts": {
+    "postversion": "git push && git push --tags && npm publish --access=public"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "tape": "^4.2.2"
+  }
+}
