@@ -17,15 +17,17 @@ Run a function n times and aggregate the results into an array
 ```js
 var times = require('@f/times')
 
+times(3, identity) === [0, 1, 2]
 ```
 
 ## API
 
-### times(arg)
+### times(n, fn)
 
-- `arg` -
+- `n` - The number of times to run `fn(i)`
+- `fn` - Receives a single argument, the current index. Also called with the same `this` context as `times`.
 
-**Returns:**
+**Returns:** An array of the return values of `fn`.
 
 ## License
 
